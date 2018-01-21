@@ -67,7 +67,7 @@ class BasePlugin:
         else:
             return str(out)
     
-    # Executed once at reboot/update, can create up to 255 devices
+    # Executed once at reboot/update, can create up to 255 devices : but how ???
     def onStart(self):
         global _tv
         
@@ -75,7 +75,7 @@ class BasePlugin:
             Domoticz.Debugging(1)
             self.debug = True
 
-        #TODO: get number of inputs and apps to build list
+        #TODO: get number of inputs and apps to build list ==> how ???????????
         
         self.SourceOptions3 =   {   "LevelActions"  : "||||||", 
                                     "LevelNames"    : "Off|TV|HDMI1|HDMI2|HDMI3|Hulu|Netflix",
